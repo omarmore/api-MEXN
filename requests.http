@@ -1,0 +1,43 @@
+###
+GET http://localhost:3100 HTTP/1.1
+Content-Type: application/json
+
+{}
+
+###
+GET http://localhost:3100/api/v1/users HTTP/1.1
+Content-Type: application/json
+
+{}
+
+###
+GET http://localhost:3100/api/v1/users/652ffc109e72d21af130e14f HTTP/1.1
+Content-Type: application/json
+
+{}
+
+###
+POST http://localhost:3100/api/v1/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Pedro3",
+    "age": 43,
+    "email": "pedro3@picapiedra.com"
+}
+
+###
+PATCH http://localhost:3100/api/v1/users/652ffc109e72d21af130e14 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Pedro1",
+    "age": 41,
+    "email": "pedro1@picapiedra.com"
+}
+
+###
+DELETE http://localhost:3100/api/v1/users/12 HTTP/1.1
+Content-Type: application/json
+
+{}
